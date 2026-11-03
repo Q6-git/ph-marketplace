@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>팔렝케 마켓 · 필리핀 중고거래</title>
+  <meta name="description" content="필리핀 동네 중고거래 시제품 — 사고, 팔고, 나누세요.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="logo" aria-label="홈으로">
+      <span class="logo-mark">🛺</span>
+      <span class="logo-text">팔렝케<small>마켓</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="어떤 물건을 찾으세요? (예: 아이폰, 소파)" autocomplete="off">
+    </form>
+    <nav class="topnav">
+      <a href="#/favorites" data-nav="favorites">♡ 찜</a>
+      <a href="#/my" data-nav="my">내 판매</a>
+      <a href="#/sell" class="btn btn-primary" data-nav="sell">+ 판매하기</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="bottomnav" aria-label="모바일 메뉴">
+    <a href="#/" data-nav="home"><span>🏠</span>홈</a>
+    <a href="#/favorites" data-nav="favorites"><span>♡</span>찜</a>
+    <a href="#/sell" data-nav="sell" class="bn-sell"><span>＋</span>판매</a>
+    <a href="#/my" data-nav="my"><span>👤</span>내 판매</a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    팔렝케 마켓은 학습용 시제품입니다. 실제 거래는 이루어지지 않으며 데이터는 이 브라우저에만 저장됩니다.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
